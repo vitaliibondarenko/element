@@ -1,0 +1,17 @@
+@media (min-width: 0px) and  (max-width: 986px) {
+    .header-box__contacts__phone {
+        flex-direction: row;
+    }
+    .header-box__contacts__phone a {
+        margin: 0 0 0 30px;
+    }
+    .header-box-contacts {
+        position: unset;
+    }
+    .footer-box__contacts {
+        font-size: 10px;
+    }
+    .footer .navigation {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,44 @@
+@import url('../../../css/global.css');
+@import url('../../../css/header.css');
+@import url('../../../css/footer.css');
+@import url('../../../css/tablet.css');
+
+
+/* MAIN */
+main {
+    /* height: 1000px; */
+    margin-bottom: 31px;
+}
+
+.content-title__text {
+    margin: 0;
+}
+
+.content-box {
+    margin: 0 0 28px 0;
+}
+
+.content-box__text-title {
+    margin: 24px 0 16px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content-box__text-p {
+    margin: 0 0 24px 0;
+}
+
+.content-box__text-button {
+    margin: 0 0 59px 0;
+    background: #C4C4C4;
+    border-radius: 5px;
+}
+
+.content-box__text-button__link {
+    display: block;
+    height: 39px;
+    padding: 0 0 0 50px;
+    color: #fff;
+    line-height: 16px;
+    letter-spacing: 0.465em;
+}

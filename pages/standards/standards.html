@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./css/standards.css">
+    <title>Element</title>
+</head>
+<body>
+    <header>
+        <div class="header wrapper">
+            <div class="header-box">
+                <div class="header-box-company">
+                    <div class="header-box-company__logo"><img src="../../img/logo.png" alt="Логотип компании Элемент"></div>
+                    <!-- <div class="company-name">Element</div> -->
+                </div>
+                <div class="header-box-contacts">
+                    <a href="tel: +79637116325" class="link header-box__contacts__phone">+7 (963) 711-63-25</a>
+                    <a href="tel: +79262829641" class="link header-box__contacts__phone">+7 (926) 282-96-41</a><br>
+                    <a href="mailto: element-av@yandex.ru" class="link">element-av@yandex.ru</a>
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list__item"><a href="../../index.html" class="nav-link">Главная</a></li>
+                    <li class="navigation-list__item"><a href="../about/about.html" class="nav-link nav-link-active">О компании</a></li>
+                    <li class="navigation-list__item"><a href="#" class="nav-link">Лицензии и Свидетельства</a></li>
+                    <li class="navigation-list__item"><a href="#" class="nav-link">Нормативы</a></li>
+                    <li class="navigation-list__item"><a href="../contacts/contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-icon"><span></span><span></span><span></span></div>
+                    </button>
+                    <div class="dropdown-menu navigation-list__item" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-item navigation-list__item"><a href="../../index.html" class="nav-link">Главная</a></li>
+                        <li class="dropdown-item navigation-list__item"><a href="../about/about.html" class="nav-link nav-link-active">О компании</a></li>
+                        <li class="dropdown-item navigation-list__item"><a href="#" class="nav-link">Лицензии и Свидетельства</a></li>
+                        <li class="dropdown-item navigation-list__item"><a href="#" class="nav-link">Нормативы</a></li>
+                        <li class="dropdown-item navigation-list__item"><a href="../contacts/contacts.html" class="nav-link">Контакты</a></li>
+                    </div>
+                </div>
+            </nav>
+            <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-icon"><span></span><span></span><span></span></div>
+                </button>
+                <div class="dropdown-menu navigation-list__item" aria-labelledby="dropdownMenuButton">
+                    <li class="dropdown-item navigation-list__item"><a href="../../index.html" class="nav-link">Главная</a></li>
+                    <li class="dropdown-item navigation-list__item"><a href="../about/about.html" class="nav-link nav-link-active">О компании</a></li>
+                    <li class="dropdown-item navigation-list__item"><a href="#" class="nav-link">Лицензии и Свидетельства</a></li>
+                    <li class="dropdown-item navigation-list__item"><a href="#" class="nav-link">Нормативы</a></li>
+                    <li class="dropdown-item navigation-list__item"><a href="../contacts/contacts.html" class="nav-link">Контакты</a></li>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <main>
+        <div class="content wrapper">
+            <div class="content-breadcrumbs">
+                <ul class="content-breadcrumbs__list">
+                    <li class="content-breadcrumbs__list-item"><a href="#" class="content-breadcrumbs__link">главная</a></li>
+                    <li class="content-breadcrumbs__list-item"><a href="#" class="content-breadcrumbs__link content-breadcrumbs__link-active">нормативы</a></li>
+                </ul>
+            </div>
+            <div class="content-title">
+                <h1 class="content-title__text">Нормативы</h1>
+            </div>
+            <div class="content-box">
+                <div class="content-box__text">
+                    <h4 class="content-box__text-title">Охрарна труда</h4>
+                    <p class="content-box__text-p">
+                        Нормативно правовые акты по охране труда делятся на государственный и локальный уровни.
+                         В перечень документов каждого из уровней входят нормы, правила, положения, стандарты, инструкции и другие нормативные акты, 
+                         содержащие обязательные либо рекомендованные для выполнения требования и нормативы. Не допускается противоречия положений 
+                         разработанной в организации локальной документации государственным нормативным требованиям охраны труда.
+                    </p>
+                    <div class="content-box__text-button">
+                        <a href="#" class="content-box__text-button__link link">информация и нормативные документы</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content-box__text">
+                    <h4 class="content-box__text-title">Пожарная безопасность</h4>
+                    <p class="content-box__text-p">
+                        Прежде всего дадим определение «пожарная безопасность объекта защиты»
+                         - состояние объекта защиты, характеризуемое возможностью предотвращения возникновения
+                          и развития пожара, а также воздействия на людей и имущество опасных факторов пожара.
+                    </p>
+                    <div class="content-box__text-button">
+                        <a href="#" class="content-box__text-button__link link">информация и нормативные документы</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer wrapper">
+            <div class="footer-box">
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-list__item"><a href="../../index.html" class="nav-link">Главная</a></li>
+                        <li class="navigation-list__item"><a href="#" class="nav-link nav-link-active">О компании</a></li>
+                        <li class="navigation-list__item"><a href="#" class="nav-link">Лицензии и Свидетельства</a></li>
+                        <li class="navigation-list__item"><a href="#" class="nav-link">Нормативы</a></li>
+                        <li class="navigation-list__item"><a href="#" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-box__contacts">
+                    <a href="tel: +79637116325" class="link phone">+7 (963) 711-63-25</a>
+                    <a href="tel: +79262829641" class="link phone">+7 (926) 282-96-41</a><br>
+                    <a href="mailto: element-av@yandex.ru" class="link">element-av@yandex.ru</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <span class="copyright-text">© 2020 ООО ЭЛЕМЕНТ</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- <script src="../../js/main.js"></script> -->
+</html>

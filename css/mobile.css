@@ -1,0 +1,24 @@
+@media (min-width: 0px) and  (max-width: 830px) {
+    header {
+        height: unset;
+    }
+    .header-box {
+        flex-direction: column-reverse;
+    }
+    .header-box-company {
+        display: flex;
+    }
+    .header-box-company__logo {
+        margin: auto auto 50px auto;
+    }
+    .header-box-contacts {
+        align-items: center;
+        justify-content: space-around;
+    }
+    .licenses-box__licenses {
+        flex-direction: column;
+    }
+    .license {
+        margin: auto;
+    }
+}

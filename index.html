@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/middle.css">
+    <title>Element</title>
+</head>
+<body>
+    <header>
+        <div class="header wrapper">
+            <div class="header-box">
+                <div class="header-box-company">
+                    <div class="header-box-company__logo"><img src="./img/logo.png" alt="Логотип компании Элемент"></div>
+                    <!-- <div class="company-name">Element</div> -->
+                </div>
+                <div class="header-box-contacts">
+                    <div class="header-box__contacts__phone">
+                        <a href="tel: +79637116325" class="link">+7 (963) 711-63-25</a>
+                        <a href="tel: +79262829641" class="link">+7 (926) 282-96-41</a>
+                    </div>
+                    <a href="mailto: element-av@yandex.ru" class="link header-box__contacts__email">element-av@yandex.ru</a>
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list__item"><a href="./" class="nav-link nav-link-active">Главная</a></li>
+                    <li class="navigation-list__item"><a href="#" class="nav-link">Услуги</a></li>
+                    <li class="navigation-list__item"><a href="./pages/about/about.html" class="nav-link">О компании</a></li>
+                    <li class="navigation-list__item"><a href="./pages/licenses/licenses.html" class="nav-link">Лицензии и Свидетельства</a></li>
+                    <li class="navigation-list__item"><a href="#" class="nav-link">Нормативы</a></li>
+                    <li class="navigation-list__item"><a href="./pages/contacts/contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="content wrapper">
+            <div class="content-title">
+                <h1 class="content-title__text">Комплексный подход<br>в сфере обеспечения безопасности</h1>
+            </div>
+            <section class="service-wrapper">
+                <div class="services dragscroll">
+                    <div class="service active">
+                        <a href="#" class="link" data-service="service1" data-service_name="audit_i_consultacia">
+                        <div class="service__counter">1</div>
+                        <span class="service-link-text">АУДИТ<br>И КОНСУЛЬТАЦИИ</span></a>
+                    </div>
+                    <div class="service">
+                        <a href="#" class="link" data-service="service2" data-service_name="proektirovanie_i_montaj">
+                        <div class="service__counter">2</div>
+                        <span class="service-link-text">ПРОЕКТИРОВАНИЕ<br>И МОНТАЖ</span></a>
+                    </div>
+                    <div class="service">
+                        <a href="#" class="link" data-service="service3" data-service_name="razrabotka_documentacii">
+                        <div class="service__counter">3</div>
+                        <span class="service-link-text">РАЗРАБОТКА<br>ДОКУМЕНТАЦИИ</span></a>
+                    </div>
+                    <div class="service">
+                        <a href="#" class="link" data-service="service4" data-service_name="tehobslujivanie_i_remont">
+                        <div class="service__counter">4</div>
+                        <span class="service-link-text">ТЕХ.ОБСЛУЖИВАНИЕ<br>И РЕМОНТ</span></a>
+                    </div>
+                    <div class="service">
+                        <a href="#" class="link" data-service="service5" data-service_name="pojarnaya_bezopasnost_pod_kluch">
+                        <div class="service__counter">5</div>
+                        <span class="service-link-text">ПОЖАРНАЯ<br>БЕЗОПАСНОСТЬ<br>ПОД КЛЮЧ</span></a>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <div class="service__counter">1</div>
+                    <div class="service-text service-active" id="service1">
+                        <h3 class="service-text-header">Заголовок 1</h3>
+                        <p>Товарищи! укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития. Равным образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки соответствующий условий активизации. С другой стороны новая модель организационной деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.</p>
+                        <h4 class="service-text-header">Заголовок 2</h4>
+                        <p>Товарищи! дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание форм развития. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности играет важную роль в формировании модели развития. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+                    </div>
+                    <div class="service-text" id="service2">
+                        <h3>Заголовок 1</h3>
+                        <p>Товарищи! укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития. Равным образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки соответствующий условий активизации. С другой стороны новая модель организационной деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.</p>
+                    </div>
+                    <div class="service-text" id="service3"></div>
+                    <div class="service-text" id="service4"></div>
+                    <div class="service-text" id="service5"></div>
+                    <div class="callback-popup">
+                        <div class="link popup-button">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="main-background"></div>
+    </main>
+    <footer>
+        <div class="footer wrapper">
+            <div class="footer-box">
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-list__item"><a href="./index.html" class="nav-link">Главная</a></li>
+                        <li class="navigation-list__item"><a href="#" class="nav-link">Услуги</a></li>
+                        <li class="navigation-list__item"><a href="./pages/about/about.html" class="nav-link">О компании</a></li>
+                        <li class="navigation-list__item"><a href="#" class="nav-link">Лицензии и Свидетельства</a></li>
+                        <li class="navigation-list__item"><a href="#" class="nav-link">Нормативы</a></li>
+                        <li class="navigation-list__item"><a href="./pages/contacts/contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-box__contacts">
+                    <a href="tel: +79637116325" class="link phone">+7 (963) 711-63-25</a>
+                    <a href="tel: +79262829641" class="link phone">+7 (926) 282-96-41</a><br>
+                    <a href="mailto: element-av@yandex.ru" class="link">element-av@yandex.ru</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <span class="copyright-text">© 2020 ООО ЭЛЕМЕНТ</span>
+            </div>
+        </div>
+    </footer>
+    <div class="popup-modal-wrapper">
+        <div class="popup-modal">
+            <div class="popup-header">
+                <div class="popup-image"></div>
+                <div class="popup-header-text"><h3 class="popup-title">Нужна консультация?</h3>
+                    <p class="popup-title-text">Пожалуйста, заполните форму ниже,<br>и наши специалисты свяжутся с Вами в ближайшее время.</p>
+                </div>
+            </div>
+            <a href="#" class="popup-close link">[ x ]</a>
+            <form action="" id="callback-form">
+                <div class="form-box">
+                    <span>Тема сообщения:</span>
+                    <select name="service" id="service-select" class="form-item field">
+                        <option value="service1" class="field" selected>Аудит на объекте</option>
+                        <option value="service2" class="field">Услуга 2</option>
+                        <option value="service3" class="field">Услуга 3</option>
+                        <option value="service4" class="field">Услуга 4</option>
+                        <option value="service5" class="field">Услуга 5</option>
+                    </select>
+                    <input type="name" name="name" placeholder="Ваше имя*" class="form-item field">
+                    <input type="phone" name="phone" placeholder="Номер телефона*" class="form-item field form-box__phone-field" pattern="[+][7][(][0-9]{3}[)][ ][0-9]{3}[-][0-9]{4}">
+                    <div class="form-item popup-file add-requisites">
+                        <input type="file" name="file" class="popup-file__input" id="file" enctype="multipart/form-data">
+                        <!-- accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" -->
+                        <label for="file" class="popup-file__label">+ Прикрепить реквизиты компании (опционально)</label>
+                    </div>
+                    <div class="form-item popup-file__success">
+                        <!-- <div class="popup-file__success-file" id="attached-file-01">
+                            <span>Название файла.docx</span>
+                            <div class="popup-file__remove"></div>
+                        </div>
+                        <div class="popup-file__success-file" id="attached-file-02">
+                            <span>Название файла.docx</span>
+                            <div class="popup-file__remove"></div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="checkbox-user-data">
+                    <input type="checkbox" class="chckbx" required>
+                    <div class="checkbox-text">
+                        <span>Даю согласие с </span>
+                        <a href="#" class="link data-policy">политикой обработки персональных данных</a>        
+                    </div>
+                </div>
+                <button class="form-box__send-button">Отправить</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./js/plugins/dragscroll.js"></script>
+<script src="./js/inputmask.min.js"></script>
+<script src="./js/jquery.inputmask.js"></script>
+<script src="./js/main.js"></script>
+</html>
