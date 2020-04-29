@@ -1,36 +1,6 @@
 @import url('../../../css/global.css');
 @import url('../../../css/header.css');
 @import url('../../../css/footer.css');
+@import url('./about-import.css');
 @import url('../../../css/tablet.css');
-
-
-/* MAIN */
-main {
-    /* height: 1000px; */
-    margin-bottom: 31px;
-}
-
-.content-title__text {
-    margin: 0;
-}
-
-.content-box__text-title {
-    margin: 24px 0 16px 0;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.content-box__text-p {
-    margin: 0 0 24px 0;
-}
-
-.content-box__gallery {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 0 57px 0;
-}
-
-.content-box__gallery img {
-    width: 47%;
-    max-height: 312px;
-}
+@import url('../../../css/mobile.css');

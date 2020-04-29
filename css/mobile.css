@@ -1,24 +1,109 @@
 @media (min-width: 0px) and  (max-width: 830px) {
+    body {
+        min-width: unset;
+    }
     header {
         height: unset;
+        width: 100vw;
     }
     .header-box {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .header-box-company {
         display: flex;
     }
     .header-box-company__logo {
-        margin: auto auto 50px auto;
+        margin: auto;
     }
     .header-box-contacts {
         align-items: center;
         justify-content: space-around;
+        margin: 0;
     }
+
+    .navigation {
+        display: none;
+    }
+
+    .header .navigation {
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 80vh;
+        background-color: #ffffff;
+        z-index: 1000;
+        top: -80vh;
+        transition: 0.2s;
+    }
+    .navigation-list {
+        flex-direction: column;
+        margin: 0 auto 0;
+    }
+    .navigation-list__item:nth-child(n+1) {
+        margin: 30px auto 0;
+        font-size: 20px;
+    }
+    .navigation__close {
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: url('../img/svg/close-cross.svg');
+        top: 10px;
+        right: 10px;
+    }
+
+    .header .navigation-active {
+        top: 0px;
+    }
+
     .licenses-box__licenses {
         flex-direction: column;
     }
     .license {
+        margin: 0 auto;
+        min-height: 428px;
+    }
+    .license__img {
+        width: 220px;
+        height: 312px;
+    }
+
+    main .popup-button {
+        width: 70vw;
+        font-size: 11px;
+        text-align: center;
+    }
+    .content-title__text {
+        font-size: 17px;
+    }
+    .content-title {
+        margin: auto;
+    }
+    .navigation-menu-button {
+        display: block;
+    }
+
+    .services {
+        display: none;
+    }
+    .service-content {
+        display: none;
+    }
+
+    #accordion {
+        display: block;
+    }
+    
+}
+@media (min-width: 0px) and  (max-width: 425px) {
+    .header-box-contacts {
+        font-size: 13px;
+    }
+    .header-box__contacts__phone {
+        width: 100%;
+    }
+    .header-box__contacts__phone a {
         margin: auto;
     }
 }

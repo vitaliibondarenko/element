@@ -1,68 +1,7 @@
 @import url('../../../css/global.css');
 @import url('../../../css/header.css');
 @import url('../../../css/footer.css');
+@import url('./licenses-import.css');
 @import url('../../../css/tablet.css');
 @import url('../../../css/mobile.css');
 
-
-.content {
-    padding: 0 0 62px 0;
-}
-
-.content-box {
-    background-color: #FFF;
-}
-
-.licenses-box__discription {
-    margin: 21px 0 0 13px;
-}
-.licenses-box__licenses {
-    display: flex;
-    justify-content: space-around;
-    margin: 63px 0 66px 0;
-}
-.license {
-    position: relative;
-    max-width: 276px;
-    min-height: 500px;
-    text-align: center;
-}
-.license__img {
-    width: 276px;
-    height: 392px;
-    border: 1px solid #000;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.license__name {
-    margin: 11px 0 0 0;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-
-    color: #FF742D;
-}
-.license__discription {
-    position: absolute;
-    bottom: 0;
-    text-align: start;
-}
-
-.license__prop-download-img {
-    width: 20px;
-    height: 20px;
-    margin: 0 0 0 10px;
-    position: relative;
-    top: 3px;
-    background-image: url('../../../img/svg/download.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.license__prop-download-link {
-    display: inline-block;
-}
-
-.sca {
-    background-image: url('../../../img/licenses/license_mchs.jpg');
-}

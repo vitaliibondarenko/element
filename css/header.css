@@ -64,8 +64,47 @@ header {
 .navigation-list__item:nth-child(n+2) {
     margin: 0 0 0 30px;
 }
-
-.dropdown {
+.navigation-menu-button {
     display: none;
+    position: relative;
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+    border: 2px solid #286090;
+    border-left: none;
+    border-right: none;
 }
 
+.navigation-burger {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #d9edf7;
+    top: 15px;
+    left: 7px;
+    border-radius: 1px;
+}
+.navigation-burger::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #d9edf7;
+    top: -7px;
+    border-radius: 1px;
+}
+.navigation-burger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #d9edf7;
+    top: 7px;
+    border-radius: 1px;
+}
+
+.navigation-menu-button__title {
+    position: relative;
+    left: 40px;
+    top: 7px;
+}

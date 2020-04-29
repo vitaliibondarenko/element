@@ -1,0 +1,74 @@
+.content {
+    padding: 0 0 62px 0;
+}
+
+.content-box {
+    background-color: #FFF;
+}
+
+.licenses-box__discription {
+    margin: 21px 0 0 13px;
+}
+.licenses-box__licenses {
+    display: flex;
+    flex-flow: wrap;
+    margin: 63px auto;
+}
+.licenses-box__licenses-row {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+.licenses-box__licenses-row:nth-child(2n) {
+    margin-top: 30px;
+}
+
+.license {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    max-width: 276px;
+    min-height: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.license:nth-child(n+3) {
+    margin-top: 20px;
+}
+
+.license__img {
+    width: 276px;
+    height: 392px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.license__name {
+    margin: 11px 0 0 0;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+
+    color: #FF742D;
+}
+.license__discription {
+    text-align: start;
+    margin-top: auto;
+}
+
+.license__prop-download-img {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 10px;
+    position: relative;
+    top: 3px;
+    background-image: url('../../../img/svg/download.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.license__prop-download-link {
+    display: inline-block;
+}

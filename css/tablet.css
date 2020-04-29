@@ -14,4 +14,20 @@
     .footer .navigation {
         font-size: 10px;
     }
+    .services {
+        font-size: 10px;
+    }
+    .service .service__counter {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    
+
+    /* .license:nth-child(2n+2) {
+        margin-left: auto;
+    }
+    .license:nth-child(2n) {
+        margin-top: 20px;
+    } */
 }
