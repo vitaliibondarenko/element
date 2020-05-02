@@ -11,7 +11,6 @@ main {
 
 .content {
     position: relative;
-    padding-bottom: 59px;
 }
 
 .map {
@@ -269,8 +268,8 @@ main {
     transition: ease-in-out 0.3s;
 }
 .field-required, .field-required::-webkit-input-placeholder {
-    color: #B71D1D;
-    border-color: #B71D1D;
+    color: #F50200;
+    border-color: #F50101;
 }
 
 #service-select {

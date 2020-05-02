@@ -8,9 +8,8 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ccc8866a-1088-462c-b26f-1185e83efd47&lang=ru_RU" type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="../contacts/css/contacts.css">
+    <link rel="stylesheet" href="./css/labour-protection.css">
     <title>Element</title>
 </head>
 <body>
@@ -18,7 +17,7 @@
         <div class="header wrapper">
             <div class="header-box">
                 <div class="header-box-company">
-                    <div class="header-box-company__logo"><img src="../../img/logo.png" alt="Логотип компании Элемент"></div>
+                    <div class="header-box-company__logo"><img src="../../../img/logo.png" alt="Логотип компании Элемент"></div>
                     <!-- <div class="company-name">Element</div> -->
                 </div>
                 <div class="header-box-contacts">
@@ -29,15 +28,20 @@
                     <a href="mailto: element-av@yandex.ru" class="link header-box__contacts__email">element-av@yandex.ru</a>
                 </div>
             </div>
+            <div class="navigation-menu-button">
+                <div class="navigation-burger"></div>
+                <span class="navigation-menu-button__title">Меню сайта</span>
+            </div>
             <nav class="navigation">
                 <ul class="navigation-list">
-                    <li class="navigation-list__item"><a href="../../" class="nav-link">Главная</a></li>
+                    <li class="navigation-list__item"><a href="../../../" class="nav-link">Главная</a></li>
                     <li class="navigation-list__item"><a href="#" class="nav-link">Услуги</a></li>
                     <li class="navigation-list__item"><a href="./about.html" class="nav-link">О компании</a></li>
                     <li class="navigation-list__item"><a href="../licenses/licenses.html" class="nav-link">Лицензии и Свидетельства</a></li>
-                    <li class="navigation-list__item"><a href="#" class="nav-link">Нормативы</a></li>
-                    <li class="navigation-list__item"><a href="./contacts.html" class="nav-link nav-link-active">Контакты</a></li>
+                    <li class="navigation-list__item"><a href="#" class="nav-link nav-link-active">Нормативы</a></li>
+                    <li class="navigation-list__item"><a href="../contacts/contacts.html" class="nav-link">Контакты</a></li>
                 </ul>
+                <div class="navigation__close"></div>
             </nav>
         </div>
     </header>
@@ -46,41 +50,37 @@
             <div class="content-breadcrumbs">
                 <ul class="content-breadcrumbs__list">
                     <li class="content-breadcrumbs__list-item"><a href="#" class="content-breadcrumbs__link">главная</a></li>
-                    <li class="content-breadcrumbs__list-item"><a href="#" class="content-breadcrumbs__link content-breadcrumbs__link-active">контакты</a></li>
+                    <li class="content-breadcrumbs__list-item"><a href="#" class="content-breadcrumbs__link">нормативы</a></li>
+                    <li class="content-breadcrumbs__list-item"><a href="#" class="content-breadcrumbs__link content-breadcrumbs__link-active">пожарная безопасность</a></li>
+
                 </ul>
             </div>
             <div class="content-title">
-                <h1 class="content-title__text">Контакты</h1>
+                <h1 class="content-title__text">Пожарная безопасность</h1>
             </div>
-            <!-- <h1 class="content-title">Контакты</h1> -->
-            <section class="content-box">
-                <div class="contacts-box">
-                    <div class="contacts-box-row">
-                        <div class="address">
-                            <h4>Офис</h4>
-                            <p>125499 г. Москва, Бульвар Кронштадтский, д. 35Б эт. 3 пом. 3208Г</p><br>
-                            <p>+7 (963) 711-63-25<br>+7 (926) 282-96-41<br>element-av@yandex.ru</p><br>
-                        </div>
-                        <div class="howtoget">
-                            <h4>Как добраться?</h4>
-                            <p>На автомобиле:</p>
-                        </div>
-                    </div>
-                    <div class="contacts-box-row">
-                        <div class="requisites">
-                            <h4>Реквизиты</h4>
-                            <p>ООО "Элемент"<br><br>
-                                ИНН 000000<br>
-                                КПП 000000<br>
-                                Р/С 00000000000000000
-                            </p>
-                            
-                        </div>
+            <div class="content-box">
+                <div class="back-button">
+                    <a href="../standards.html" class="link">&lt; назад</a>
+                </div>
+                <div class="content-box__text">
+                    <h4 class="content-box__text-title">Кодекс Российской Федерации об административных правонарушен</h4>
+                    <div class="content-box__text-group">
+                        <ul class="text-group__list">
+                            <li class="text-group__list-item">
+                                <span>КОАП РФ</span>
+                                <a href="../../../source/standards/fire-safety/Кодекс Российской Федерации об административных правонарушен.pdf" class="link list-item-link"></a>
+                                <p class="list-item-discription"></p>
+                            </li>
+                            <li class="text-group__list-item">
+                                <span>Выдержки из КОАП РФ</span>
+                                <a href="../../../source/standards/fire-safety/Штрафы по ПБ, ОТ 2014.pdf" class="link list-item-link"></a>
+                                <p class="list-item-discription">Штрафы по охране труда, пожарной безопасности и промышленной безопасности 2014-2015 г.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
-        <div id="map" class="yandex-map" style="min-width: 100%; height: 417px"></div>
         <!-- <div class="main-background"></div> -->
     </main>
     <footer>
@@ -108,7 +108,5 @@
         </div>
     </footer>
 </body>
-<!-- <link rel="stylesheet" href="../../css/main.css"> -->
-<script src="../../js/main.js"></script>
-<script src="../../js/contacts.js"></script>
+<!-- <script src="../../js/main.js"></script> -->
 </html>

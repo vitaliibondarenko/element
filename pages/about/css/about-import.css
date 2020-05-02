@@ -1,13 +1,15 @@
 /* MAIN */
-main {
-    /* height: 1000px; */
-    margin-bottom: 31px;
+.content-box {
+    flex-direction: row;
+    padding: 0 30px 100px;
 }
-
 .content-title__text {
     margin: 0;
 }
 
+.content-box__text{
+    width: 50%;
+}
 .content-box__text-title {
     margin: 24px 0 16px 0;
     font-weight: bold;
@@ -15,16 +17,17 @@ main {
 }
 
 .content-box__text-p {
-    margin: 0 0 24px 0;
+    margin: 0 30px 24px 0;
 }
 
 .content-box__gallery {
     display: flex;
     justify-content: space-around;
-    margin: 0 0 57px 0;
+    width: 50%;
+    margin: 60px 0 0 0;
 }
 
 .content-box__gallery img {
-    width: 47%;
+    width: 100%;
     max-height: 312px;
 }

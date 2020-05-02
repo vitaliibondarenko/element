@@ -1,0 +1,36 @@
+main {
+    padding: 0;
+}
+
+.content {
+    padding-bottom: 0px;
+}
+.content-box {
+    background-color: #FFF;
+}
+
+.contacts-box {
+    display: flex;
+    flex-grow: 1;
+    padding: 0 0 0 20px;
+}
+
+.contacts-box-row {
+    margin-right: auto;
+    padding-top: 23px;
+    /* min-width: 393px; */
+}
+
+.contacts-box-row h4 {
+    font-weight: 700;
+    color: #052763;
+}
+
+.contacts-box-row p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.howtoget p {
+    font-weight: bold;
+}
