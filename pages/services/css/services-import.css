@@ -236,7 +236,7 @@ main {
     bottom: 140px;
 }
 .backtotop-button {
-    display: block;
+    display: none;
     width: 55px;
     height: 55px;
     border-radius: 50%;

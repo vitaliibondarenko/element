@@ -11,6 +11,7 @@ main {
 .content-box {
     min-height: 580px;
     margin: 0 0 28px 0;
+    flex-direction: column-reverse;
 }
 
 .content-box__text {

@@ -34,3 +34,23 @@ main {
 .howtoget p {
     font-weight: bold;
 }
+
+.download-company-card {
+    text-align: left;
+}
+.download-company-card span {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    vertical-align: middle;
+    color: #FF742D;
+}
+.download-company-card-link {
+    display: inline-block;
+    margin: 0 24px 0 12px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../../img/svg/download2.svg');
+    vertical-align: middle;
+}

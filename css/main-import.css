@@ -139,6 +139,12 @@ main {
     height: auto;
     z-index: 100;
 }
+.service-list {
+    padding: 5px;
+}
+.service-list__item {
+    list-style-type: "-";
+}
 
 .callback-popup {
     padding: 58px 0;
