@@ -112,6 +112,7 @@ main {
     transition: 0.5s;
     opacity: 0;
     z-index: -1;
+    overflow: hidden;
 }
 
 .service-text-header {
