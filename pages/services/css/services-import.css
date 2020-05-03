@@ -1,0 +1,247 @@
+/* MAIN */
+main {
+    /* height: 1000px; */
+    margin-bottom: 31px;
+}
+
+.content-title__text {
+    margin: 0 0 15px 0;
+}
+
+.content-box {
+    min-height: 580px;
+    margin: 0 0 28px 0;
+    padding: 51px 20px 60px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content-box__text {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    padding: 0 44px;
+    background: #F9F9F9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.content-box__text:nth-child(n+2) {
+    margin: 28px 0 0 0;
+}
+
+.fire-safety {
+    width: 549px;
+    padding: 0 36px 51px 32px;
+    background-color: #1D3660;
+    background-image: url('../img/icon-fire-safety.svg');
+    background-repeat: no-repeat;
+    background-position-x: 325px;
+    background-position-y: 17px;
+}
+.fire-safety .content-box__text-title {
+    display: block;
+    max-width: 410px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    margin: 41px 0 0 0;
+    color: #FFFFFF;
+}
+.fire-safety .content-box__text-price-button {
+    margin: 113px auto 0;
+    background: #F50101;
+    width: 100%;
+}
+
+.content-box__text-service-logo {
+    margin: 34px auto 0;
+    width: 145px;
+    height: 145px;
+    background: #49638E;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-position-x: 40px; */
+    border-radius: 50%;
+}
+.content-box__text-title {
+    max-width: 350px;
+    text-align: center;
+    margin: 10px auto 0;
+}
+
+.content-box__text-service-list {
+    margin: 43px 0 0 0;
+    padding: 0 0 0 20px;
+}
+.service-list__item {
+    list-style: url('../img/list-style.svg');
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.content-box__text-price-button {
+    width: 365px;
+    height: 39px;
+    margin: 30px auto;
+    background: #FF742D;
+    border-radius: 5px;
+}
+.price-button-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.price-button-link span {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: #ffffff;
+}
+.price-button-link div {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/**POPUP**/
+.popup-modal-wrapper {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: 0.3s;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+}
+.popup-modal {
+    position: relative;
+    width: 422px;
+    height: 416px;
+    margin: auto;
+    padding: 32px 38px 32px 39px;
+    background-color: #fff;
+    z-index: 1001;
+}
+.popup-active {
+    visibility: visible;
+    z-index: 1000;
+    opacity: 1;
+}
+.popup-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+
+    color: #052763;
+}
+.form-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+    color: #000;
+}
+.form-item:nth-child(n+2) {
+    margin-top: 14px;
+}
+.checkbox-user-data {
+    position: relative;
+    margin-top: 30px;
+    font-size: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox-user-data span {
+    color: #7D7D7D;
+}
+.checkbox-user-data input {
+    margin: 0px;
+}
+.popup-modal .popup-close {
+    position: absolute;
+    top: 16px;
+    right: 27px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FF742D;
+}
+.field {
+    height: 32px;
+    padding-left: 11px;
+    -webkit-appearance: none;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    transition: ease-in-out 0.3s;
+}
+.field::-webkit-input-placeholder{
+    transition: ease-in-out 0.3s;
+}
+.field-required, .field-required::-webkit-input-placeholder {
+    color: #F50200;
+    border-color: #F50101;
+}
+.checkbox-text .data-policy{
+    color: #FF742D;
+}
+
+.chckbx {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+}
+.checkbox-text {
+    display: inline-block;
+    margin-left: 7px;
+}
+
+.form-box__send-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 0;
+    width: 230px;
+    height: 35px;
+    border: none;
+    background-color: #C1C1C1;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    letter-spacing: 0.22em;
+}
+
+.send-button-active {
+    color: #fff;
+    background-color: #FF742D;
+}
+
+/**КНОПКА НАВЕРХ**/
+.backtotop {
+    position: fixed;
+    right: 15px;
+    bottom: 140px;
+}
+.backtotop-button {
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #1D3660;
+    background-image: url('../../../img/svg/up-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}

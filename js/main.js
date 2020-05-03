@@ -68,20 +68,22 @@ const popupModal = document.querySelector('.popup-modal-wrapper');
 const popupButton = document.querySelector('.popup-button');
 
 function togglePopup(e) {
+    // e.preventDefault();
     if(e.toElement === $('.popup-close')[0]){
         e.preventDefault(); 
     }
-    // e.preventDefault();
     if(popupModal.classList.contains('popup-active')){
         if(e.toElement === popupModal || e.toElement === $('.popup-close')[0]){
             popupModal.classList.toggle('popup-active');
         }
     } else {
+        e.preventDefault();
         popupModal.classList.toggle('popup-active');
     }
 }
 if(popupButton != null){
     popupButton.addEventListener('click' , togglePopup);
+    $('.popup-button').on('click' , togglePopup);
 }
 if(popupModal != null){
     popupModal.addEventListener('click' , togglePopup);
@@ -130,6 +132,9 @@ function getSelectedOption () {
             selectedOption = element.innerHTML;
         }
     });
+    if ( selectedOption === undefined ) {
+        selectedOption = 'Узнать стоимость'
+    }
     return selectedOption;
 }
 
@@ -139,7 +144,9 @@ function getSelectedOption () {
 //============== ОЧИСТКА ФОРМЫ ==============
 function formReset() {
   $('#callback-form')[0].reset();
-  $('.popup-file__success')[0].innerHTML = '';
+  if ( $('.popup-file__success')[0] != undefined ){
+    $('.popup-file__success')[0].innerHTML = '';
+  }
   $('.form-box__send-button')[0].innerHTML = 'Отправить';
 }
 //=============================================================
@@ -231,3 +238,24 @@ const menuOpenButton = $('.navigation-menu-button');
 
 menuOpenButton.on('click', () => {$('.navigation').addClass('navigation-active')});
 menuCloseButton.on('click', () => {$('.navigation').removeClass('navigation-active')});
+
+//=============== Кнопка НАВЕРХ ==============================
+const toTopButton = $('.backtotop-button');
+if (toTopButton[0] != undefined) {
+    $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            toTopButton.fadeIn();
+        } else {
+            toTopButton.fadeOut();
+        }
+    });
+    
+    toTopButton.click(function (e) {
+        e.preventDefault();
+       //1 second of animation time
+       //html works for FFX but not Chrome
+       //body works for Chrome but not FFX
+       //This strange selector seems to work universally
+       $("html, body").animate({scrollTop: 0}, 1000);
+    });
+}
