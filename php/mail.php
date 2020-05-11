@@ -18,17 +18,17 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
-    // $mail->isSMTP();                                            // Send using SMTP
-    // $mail->Host       = 'smtp1.example.com';                    // Set the SMTP server to send through
-    // $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    // $mail->Username   = 'user@example.com';                     // SMTP username
-    // $mail->Password   = 'secret';                               // SMTP password
-    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    // $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+     $mail->SMTPDebug = 0; //SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+     $mail->isSMTP();                                            // Send using SMTP
+    $mail->Host       = 'smtp.ht-systems.ru';                    // Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = 'callback@element-pb.ru';                     // SMTP username
+    $mail->Password   = 'Zxcelement1!';                               // SMTP password
+    $mail->SMTPSecure =  'ssl'; //PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('skastrat@mail.ru', 'Mailer');
+    $mail->setFrom('callback@element-pb.ru', 'Mailer');
    // $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
     $mail->addAddress('skastrat@mail.ru');               // Name is optional
    // $mail->addReplyTo('info@example.com', 'Information');
@@ -58,9 +58,14 @@ try {
     //$mail->Body    .= 'This is the HTML message body <b>in bold!</b>';
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-    $mail->send();
-    echo 'true';
+    // $mail->send();
+    // echo 'true';
   //else { echo 'Ошибка при загрузке файла'; }
+  if (!$mail->send()) {
+    echo 'Mailer Error: '. $mail->ErrorInfo;
+} else {
+    echo "true";
+}
 
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

@@ -124,7 +124,7 @@ main {
 }
 
 .service-text p {
-    margin-top: 7px;
+    margin-top: 20px;
 }
 
 .service-text h4 {
@@ -144,6 +144,7 @@ main {
 }
 .service-list__item {
     list-style-type: "-";
+    padding: 0 0 0 5px;
 }
 
 .callback-popup {
@@ -291,7 +292,7 @@ main {
 }
 .popup-file__input {
     position: absolute;
-    width: .1px;
+    width: 0px;
     cursor: pointer;
 }
 .popup-file__label {
@@ -356,4 +357,8 @@ main {
 .send-button-active {
     color: #fff;
     background-color: #FF742D;
+}
+/*MOBILE CONTENT*/
+.mobile-content {
+    display: none;
 }

@@ -19,6 +19,12 @@ header {
 
 .header-box-company__logo {
     margin: 25px 0 0 0;
+    width: 233px;
+    height: 50px;
+}
+.header-box-company__logo img {
+    width: inherit;
+    height: inherit;
 }
 
 .header-box-contacts {
@@ -65,41 +71,44 @@ header {
     margin: 0 0 0 30px;
 }
 .navigation-menu-button {
+    --burger-width: 47px;
+    --burger-color: #FF742D;
+    --burger-top: -14px;
+    --burger-bottom: 14px;
+    --burger-thin: 3px;
     display: none;
     position: relative;
-    width: 100%;
-    height: 35px;
-    margin-top: 20px;
-    border: 2px solid #286090;
-    border-left: none;
-    border-right: none;
+    width: var(--burger-width);
+    height: 33px;
+    margin: 0 0 0 46px;
 }
 
 .navigation-burger {
     position: absolute;
-    width: 30px;
-    height: 2px;
-    background: #d9edf7;
+    width: var(--burger-width);
+    height: var(--burger-thin);
+    background: var(--burger-color);
     top: 15px;
-    left: 7px;
     border-radius: 1px;
 }
 .navigation-burger::before {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 2px;
-    background: #d9edf7;
-    top: -7px;
+    display: inherit;
+    width: var(--burger-width);
+    height: var(--burger-thin);
+    background: var(--burger-color);
+    top: var(--burger-top);
     border-radius: 1px;
 }
 .navigation-burger::after {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 2px;
-    background: #d9edf7;
-    top: 7px;
+    display: inherit;
+    width: var(--burger-width);
+    height: var(--burger-thin);
+    background: var(--burger-color);
+    top: var(--burger-bottom);
     border-radius: 1px;
 }
 

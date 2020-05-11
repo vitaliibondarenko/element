@@ -229,19 +229,3 @@ main {
     background-color: #FF742D;
 }
 
-/**КНОПКА НАВЕРХ**/
-.backtotop {
-    position: fixed;
-    right: 15px;
-    bottom: 140px;
-}
-.backtotop-button {
-    display: none;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background: #1D3660;
-    background-image: url('../../../img/svg/up-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-}

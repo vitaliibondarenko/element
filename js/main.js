@@ -105,11 +105,14 @@ function handlePopupSubmit(e) {
     formData.delete('service');
     formData.append('service', getSelectedOption() );
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://element/php/mail.php');
+    xhr.open('POST',  `${location.origin}/php/mail.php` ); //'http://element-pb.ru/php/mail.php' `${location.origin}/php/mail.php`
     xhr.responseType = 'json';
     xhr.send( formData );
     xhr.onreadystatechange = () => {
         if (xhr.readyState === 4 && xhr.status == 200){
+            console.log(xhr);
+            
+            
             if (xhr.response === true) {
                 document.querySelector('.form-box__send-button').innerHTML = 'отправлено';
                 if (xhr.response === true) {
@@ -259,3 +262,165 @@ if (toTopButton[0] != undefined) {
        $("html, body").animate({scrollTop: 0}, 1000);
     });
 }
+
+//============== Кнопки ВЛЕВО ВПРАВО =======================
+const servicesRight = $('.service-right');
+const servicesLeft = $('.service-left');
+const servicesBox = $('.services');
+
+const scrollLength = () => servicesBox[0].scrollWidth - servicesBox[0].offsetWidth;
+
+if (servicesRight[0] != undefined) {
+    servicesBox.scroll(function() {
+        if ($('.services').scrollLeft()) {
+            servicesLeft.fadeIn();
+        } else {
+            servicesLeft.fadeOut();
+        }
+        if ($('.services')[0].scrollLeft !== scrollLength()) {
+            servicesRight.fadeIn();
+        } else {
+            servicesRight.fadeOut();
+        }
+    });
+    
+    servicesRight.click(function (e) {
+        e.preventDefault();
+       servicesBox.animate({scrollLeft: servicesBox[0].scrollLeft + 300}, 300);
+    });
+    servicesLeft.click(function (e) {
+        e.preventDefault();
+       servicesBox.animate({scrollLeft: 0}, 300);
+    });
+}
+
+//=================== Minimixed HEADER APEARE =================
+$(window).scroll(function() {
+    if ($(window).width() <= 986) {
+        if ($(window).scrollTop() >= 55 && !$('.header-minimize')[0]) {
+            $('.header').css({'top': '-55px'});
+            $('.header').addClass('header-minimize');
+            $('.header').animate({top: "0px"}, 300);
+        } else if ($(window).scrollTop() <= 55 && $('.header-minimize')[0]) {
+            $('.header').animate({top: "-55px"}, 300, "swing", function() {
+                $('.header').removeClass('header-minimize');
+            } );
+        }
+    }
+});
+//=============================================================
+// Яндекс карты
+if (typeof ymaps !== 'undefined') {
+    ymaps.ready(init);
+        function init(){
+            // Создание карты.
+            var myMap = new ymaps.Map("map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [55.84765663, 37.50505730],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 16
+            });
+            var myPlacemark = new ymaps.GeoObject({
+                geometry: {
+                    type: "Point",
+                    coordinates: [55.84765663, 37.50505730]
+                }
+            }
+            );
+            myMap.geoObjects.add(myPlacemark);
+        }
+}
+//=============================================================
+//Изменение POPUP для Моб. версии
+const popupTitle = $('.popup-title').prop('innerHTML');
+const popupTitleText = $('.popup-title-text').prop('innerHTML');
+const checkboxTextSpan = $('.checkbox-text span').prop('innerHTML');
+
+function changeTexts ( modal ) {
+    if ( modal === 'main' ) {
+        $('.chckbx').prop('required', false);
+        $('option:nth-child(6)').prop('selected', true);
+        $('.popup-title').prop('innerText', 'Пожалуйста, заполните форму');
+        $('.popup-title-text').prop('innerText', 'Наши специалисты свяжутся с Вами в ближайшее время!');
+        $('.checkbox-text span').prop('innerText', 'Нажимая кнопку ниже, Вы даете свое согласие с');
+    }
+    if ( modal === 'services' ) {
+        $('.checkbox-text span').prop('innerText', 'Нажимая кнопку ниже, Вы даете свое согласие с');
+    }     
+}
+function changeTextsBack ( modal ) {
+    if ( modal = 'main' ) {
+        $('.chckbx').prop('required', true);
+            $('.popup-title').prop('innerHTML', `${popupTitle}`);
+            $('.popup-title-text').prop('innerHTML', `${popupTitleText}`);
+            $('.checkbox-text span').prop('innerHTML', `${checkboxTextSpan}`);
+    }
+    if ( modal === 'services' ) {
+        $('.checkbox-text span').prop('innerHTML', `${checkboxTextSpan}`);
+    }  
+}
+
+if ( $(window).width() <= 450 && $('.chckbx').prop('required') && $('.main-modal')[0] ){
+    changeTexts( 'main' );
+} else if ( $(window).width() <= 450 && $('.chckbx').prop('required') && $('.services-modal')[0] ){
+    changeTexts( 'services' );
+}
+$(window).on('resize', function(){
+    if ( $(window).width() <= 450 && $('.chckbx').prop('required') && $('.main-modal')[0] ){
+        changeTexts('main');        
+    } else if ( $(window).width() > 450 && !$('.chckbx').prop('required') && $('.main-modal')[0] ){
+        changeTextsBack('main');
+    }
+    if ( $(window).width() <= 450 && $('.chckbx').prop('required') && $('.services-modal')[0] ){
+        changeTexts('services');        
+    } else if ( $(window).width() > 450 && !$('.chckbx').prop('required')  && $('.services-modal')[0]){
+        changeTextsBack('services');
+    }   
+})
+
+//===============================================================
+// Изменение Кнопок Нормативов
+const buttonText = $('.content-box__text-button__link span').prop('innerHTML');
+
+function changeButtonText () {
+    $('.content-box__text-button__link span').prop('innerHTML', 'СМОТРЕТЬ');    
+}
+function changeButtonTextBack () {
+    $('.content-box__text-button__link span').prop('innerHTML', `${buttonText}`);
+}
+
+if ( $(window).width() <= 710 && $('.standards')[0] ){
+    changeButtonText();
+}
+$(window).on('resize', function(){
+    if ( $(window).width() <= 710 && $('.standards')[0] ){
+        changeButtonText();        
+    } else if ( $(window).width() > 710 && $('.standards')[0] ){
+        changeButtonTextBack();
+    }
+})
+//===============================================================
+// Копирование КАК ДОБРАТСЬЯ
+const howToGet = $('.howtoget');
+
+if ( $(window).width() <= 450 && $('.contacts-box')[0] ){
+    $('<div>', {'class': 'contacts-box-row third-col'}).appendTo('.contacts-box');
+    howToGet.appendTo('.contacts-box-row:nth-child(3)');
+}
+$(window).on('resize', function(){
+    if ( $(window).width() <= 450 && $('.address + .howtoget')[0] && !$('.third-col')[0] ){
+        $('<div>', {'class': 'contacts-box-row third-col'}).appendTo('.contacts-box');
+        howToGet.appendTo('.contacts-box-row:nth-child(3)');        
+    } else if ($(window).width() <= 450 && $('.address + .howtoget')[0] && $('.third-col')[0]) {
+        howToGet.appendTo('.contacts-box-row:nth-child(3)');
+    }
+    if ( $(window).width() > 450 && $('.contacts-box .howtoget')[0] ){
+        howToGet.appendTo('.contacts-box-row:nth-child(1)'); 
+    }
+})
+
+
