@@ -154,7 +154,7 @@ main {
     height: 55px;
     border-radius: 50%;
     background: #1D3660;
-    background-image: url('../../../img/svg/up-arrow.svg');
+    background-image: url('../img/svg/up-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.7;
